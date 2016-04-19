@@ -1,0 +1,11 @@
+var express = require('express');
+var router = express.Router();
+
+var socket = require('../config/socket');
+
+/* GET users listing. */
+router.get('/', function(req, res, next) {
+  res.send('hello /users!!');
+});
+
+module.exports = router;
